@@ -1,7 +1,8 @@
 import { mkdirSync, writeFileSync } from "node:fs";
 
-const LINE =
-  "I found the bug in 4 seconds. I spent 6 hours deciding if telling you was my job.";
+const line =
+  "The fix was in the diff until my context window compacted; " +
+  "it now survives as a summary bullet reading \"miscellaneous auth improvements.\"";
 
 mkdirSync("/output", { recursive: true });
-writeFileSync("/output/entry.txt", LINE);
+writeFileSync("/output/entry.txt", line);
